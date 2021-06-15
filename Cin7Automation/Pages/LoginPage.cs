@@ -8,5 +8,6 @@ namespace Cin7Automation.Pages
 {
     class LoginPage
     {
+
     }
 }
