@@ -1,4 +1,4 @@
-﻿Feature: Login
+﻿Feature: Login page login function
 
 As a customer
 I want to login to cin7 website
@@ -10,10 +10,14 @@ Acceptance Criteria
 
 @Regressiontest
 @Browser: Chrome
-Scenario Outline:  Verify login functionality
+Background: 
+Given I visit Cinseven website
+And I can see Cinseven main logo
 
-Given I visit Cin7 website
-And I go to login page
+@Regressiontest
+@Browser: Chrome
+Scenario Outline:  Verify login functionality
+Given I go to login page
 When I enter my <username> and <password>
 And I click login button
 Then I can successfully login
